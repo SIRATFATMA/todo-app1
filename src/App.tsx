@@ -1,6 +1,7 @@
 import React from 'react'
 import Tasklist from './components/Tasklist'
 import CompletedTask from './components/CompletedTask'
+import './App.scss';
 
 const App: React.FC = () => {
   return (
@@ -9,15 +10,15 @@ const App: React.FC = () => {
 
         <div className="todo_app_container">
 
-          <div className="Tasklist">
-            <h2>Task List</h2>
+          <div className="new_task_list task_list">
+            <h1>Task List</h1>
             <div>
 
               <Tasklist/>
             </div>
           </div>
-          <div className="CompletedTask">
-            <h2>Completed Task</h2>
+          <div className="completed_task task_list">
+            <h1>Completed Task</h1>
             <div>
               <CompletedTask/>
             </div>
